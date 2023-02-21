@@ -26,9 +26,13 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      {expenses.map((e) => (
-        <ExpenseItem title={e.title} amount={e.amount} date={e.date} />
-      ))}
+      <div className="center">
+        <div className="expense-list">
+          {expenses.map((e) => (
+            <ExpenseItem title={e.title} amount={e.amount} date={e.date} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
